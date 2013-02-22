@@ -12,6 +12,10 @@
     "spine",
     "spine/lib/route",
     "spine/lib/manager",
-    "zooniverse/controllers/top-bar"
+    "zooniverse/lib/api",
+    "zooniverse/controllers/top-bar",
+    "zooniverse/models/user",
+    "zooniverse/models/subject",
+    "zooniverse/models/classification"
   ]
 }

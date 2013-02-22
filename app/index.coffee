@@ -9,4 +9,13 @@ TopBar = require 'zooniverse/controllers/top-bar'
 topBar = new TopBar
 topBar.el.appendTo document.body
 
+# Add the classification interface.
+Classifier = require './controllers/classifier'
+classifier = new Classifier
+classifier.el.appendTo document.body
+
+# Once we're all set up, check to see if the user is currently logged in.
+User = require 'zooniverse/models/user'
+User.fetch()
+
 module.exports = {api, topBar}

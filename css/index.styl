@@ -1,2 +1,29 @@
 @import "/node_modules/zooniverse/src/css/top-bar"
 @import "/node_modules/zooniverse/src/css/dialog"
+
+.classifier
+  position: relative
+
+  .loader
+    background: green
+    color: white
+    display: none
+    left: 0
+    position: absolute
+    top: 0
+
+  .subject
+    border: 1px solid black
+    height: 400px
+    width: 800px
+
+    .point
+      background: #000
+      height: 2px
+      left: 0
+      position: absolute
+      top: 0
+      width: 2px
+
+  &.loading .loader
+    display: block
