@@ -1,6 +1,6 @@
 <div class="subject">
   <div class="loader">
-    <strong>LOADING</strong>
+    <strong>Loading...</strong>
   </div>
 
   <svg width="100%" height="100%">

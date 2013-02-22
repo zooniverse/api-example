@@ -6,12 +6,7 @@
   ],
 
   "dependencies": [
-    "es5-shimify",
     "jqueryify",
-    "json2ify",
-    "spine",
-    "spine/lib/route",
-    "spine/lib/manager",
     "zooniverse/lib/api",
     "zooniverse/controllers/top-bar",
     "zooniverse/models/user",

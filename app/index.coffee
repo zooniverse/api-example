@@ -1,4 +1,5 @@
-require './lib/setup'
+# The Zooniverse lib requires jQuery to be loaded.
+require 'jqueryify'
 
 # First we'll set up the connection to the Zooniverse API.
 Api = require 'zooniverse/lib/api'
