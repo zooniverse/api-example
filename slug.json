@@ -1,0 +1,17 @@
+{
+  "port": 9900,
+
+  "libs": [
+    "node_modules/zooniverse/vendor/base64.js"
+  ],
+
+  "dependencies": [
+    "es5-shimify",
+    "jqueryify",
+    "json2ify",
+    "spine",
+    "spine/lib/route",
+    "spine/lib/manager",
+    "zooniverse/controllers/top-bar"
+  ]
+}
