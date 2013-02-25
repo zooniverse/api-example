@@ -1,8 +1,11 @@
-$ = require 'jqueryify'
-template = require '../views/classifier'
-User = require 'zooniverse/models/user'
-Subject = require 'zooniverse/models/subject'
-Classification = require 'zooniverse/models/classification'
+window.app ?= {}
+window.app.controllers ?= {}
+
+$ = window.jQuery
+template = app.views.Classifier
+User = zooniverse.models.User
+Subject = zooniverse.models.Subject
+Classification = zooniverse.models.Classification
 
 $window = $(window)
 
@@ -126,4 +129,4 @@ class Classifier
     Subject.next()
     @el.removeClass 'finished'
 
-module.exports = Classifier
+window.app.controllers.Classifier = Classifier

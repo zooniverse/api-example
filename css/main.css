@@ -1,0 +1,27 @@
+.classifier {
+  position: relative;
+}
+.classifier .loader {
+  background: #008000;
+  color: #fff;
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.classifier .subject {
+  border: 1px solid #000;
+  height: 400px;
+  width: 800px;
+}
+.classifier .subject .point {
+  background: #000;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+.classifier.loading .loader {
+  display: block;
+}

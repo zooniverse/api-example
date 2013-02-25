@@ -1,22 +1,21 @@
-# The Zooniverse lib requires jQuery to be loaded.
-require 'jqueryify'
+window.app ?= {}
 
 # First we'll set up the connection to the Zooniverse API.
-Api = require 'zooniverse/lib/api'
+Api = zooniverse.Api
 api = new Api project: 'cancer_gene_runner'
 
 # The top bar allows login and signup.
-TopBar = require 'zooniverse/controllers/top-bar'
+TopBar = zooniverse.controllers.TopBar
 topBar = new TopBar
 topBar.el.appendTo document.body
 
 # Add the classification interface.
-Classifier = require './controllers/classifier'
+Classifier = app.controllers.Classifier
 classifier = new Classifier
 classifier.el.appendTo document.body
 
 # Once we're all set up, check to see if the user is currently logged in.
-User = require 'zooniverse/models/user'
+User = zooniverse.models.User
 User.fetch()
 
-module.exports = {api, topBar}
+window.app.main = {api, topBar, classifier}

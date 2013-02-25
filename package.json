@@ -2,12 +2,11 @@
   "name": "cruk-example",
   "version": "0.0.1",
   "dependencies": {
-    "hem": "~0.1.8",
-    "jqueryify": "~0.0.1",
+    "coffee-script": "~1.4.0",
     "serveup": "~0.0.5",
-    "zooniverse": "git+ssh://git@github.com:zooniverse/Zooniverse.git#no-deps"
+    "stylus": "~0.32.0"
   },
   "scripts": {
-    "start": "hem server"
+    "start": "cake serve"
   }
 }
